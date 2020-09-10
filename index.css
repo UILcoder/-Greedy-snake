@@ -1,0 +1,93 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+#container{
+  position: relative;
+  width: 900px;
+  height: 800px;
+  background:linear-gradient(rgba(9, 108, 133, 0.667),rgb(9, 64, 216));
+  margin: 0 auto;
+}
+#score{
+  position: relative;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 800;
+}
+#btn{
+  position: relative;
+  width: 600px;
+  height: 600px;
+  border: solid 20px #4a89e9;
+  background-color: #49b8f8;
+  margin:0 auto;
+}
+#start button{
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  opacity: 0.5;
+  background-image: url("./img/5XqQMkL7qK.png");
+  background-position: center;
+  background-size: cover;
+  background-color: #49b8f8;
+  border: transparent;
+  left: 150px;
+  top: 200px;
+  z-index: 2;
+}
+#pause button{
+  display: none;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url("./img/暂停.svg");
+  background-position: center;
+  background-size: cover;
+  background-color: #49b8f8; 
+  border: transparent;
+  left: 250px;
+  top: 250px; 
+  z-index: 2;
+}
+#again button{
+  display: none;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-image: url("./img/再来一次.svg");
+  background-position: center;
+  background-size: cover;
+  background-color:rgb(54, 105, 243); 
+  border: rgb(9, 64, 216);
+  left: 400px;
+  top: 350px; 
+}
+#text{
+  display: none;
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  font-weight: 800;
+  left: 400px;
+  top:550px;
+  z-index: 2;
+} 
+#snakewrap{
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+.snakehead{
+  background-color: red;
+  border-radius: 40%;
+}
+.snakebody{
+  background-color: black;
+  border-radius: 20%;
+}
+.food{
+  background-color: green;
+  border-radius: 50%;
+}
