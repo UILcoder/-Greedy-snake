@@ -194,6 +194,7 @@ Game.prototype.init = function () {
     }
   }
   this.start();
+  
 }
 Game.prototype.start = function () {
   this.timer = setInterval(function () {
@@ -207,19 +208,19 @@ Game.prototype.pause = function () {
 Game.prototype.over = function () {
   clearInterval(this.timer);
   btn.style.display = 'none';
-  score.style.top = '300px';
+  score.style.top = "300px";
   again.style.display = 'block';
   text.style.display = 'block';
-  snakewrap.innerHTML = '';
-  snake = new Snake();
-  game = new Game();
   again.onmousedown = function () {
+    snakewrap.innerHTML = '';
+    snake = new Snake();
+    game = new Game();
     again.style.display = 'none';
     text.style.display = 'none';
     btn.style.display = 'block';
     start.style.display = 'block';
     score.style.top = '0px';
-    
+    score.innerHTML = '得分：' + game.score;
   }
   
 }
